@@ -25,7 +25,7 @@ function reduceArray(array, cb, initial) {
   for(i; i < array.length; i += 1) {
     const element = array[i];
     // Write code under this line
-      cb(accum, element, i);
+     accum = cb(accum, element, i);
   }
   return accum;
 }
